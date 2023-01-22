@@ -2,6 +2,33 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
 }
+
+.emojis {
+    padding: 5px;
+    text-align: start;
+    display: grid;
+    grid-template-rows: repeat(2, 320px);
+    grid-template-columns: repeat(2, 440px);
+    gap: 10px;
+    grid-template-areas:
+    "smile beer"
+    "tears seed";
+  }
+.emoji:nth-child(1) {
+    grid-area: smile;
+}
+
+.emoji:nth-child(2) {
+    grid-area: beer;
+}
+
+.emoji:nth-child(3) {
+    grid-area: tears;
+}
+
+.emoji:nth-child(4) {
+    grid-area: seed;
+} 
   
 .emoji {
     border: 1px solid #222;
@@ -38,15 +65,9 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    /* padding-right: 43%; */
     order: 4;
     height: 20px;
-    width: 400px;
-    
-   
-    /* text-align: leftcenter; */
-   
-
+    width: 400px;  
 }
   
 .icon {
@@ -56,31 +77,3 @@ body {
     margin-right: auto;
     width: 50%;  
 }
-
-
-.emojis {
-    padding: 5px;
-    text-align: start;
-    display: grid;
-    grid-template-rows: repeat(2, 340px);
-    grid-template-columns: repeat(2, 440px);
-    gap: 10px;
-    grid-template-areas:
-    "smile beer"
-    "tears seed";
-  }
-.emoji:nth-child(1) {
-    grid-area: smile;
-}
-
-.emoji:nth-child(2) {
-    grid-area: beer;
-}
-
-.emoji:nth-child(3) {
-    grid-area: tears;
-}
-
-.emoji:nth-child(4) {
-    grid-area: seed;
-} 
