@@ -7,9 +7,9 @@ body {
     padding: 5px;
     text-align: start;
     display: grid;
-    grid-template-rows: repeat(2, 320px);
+    grid-template-rows: 340px 350px;
     grid-template-columns: repeat(2, 440px);
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-areas:
     "smile beer"
     "tears seed";
@@ -41,22 +41,25 @@ body {
     align-items: stretch;
 }
 
-h2 {
+.emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
-    font-size: 23px;
+    font-size: 24px;
     order: 2;
     flex-basis: 100%;
+    margin-top: 5px;
 }
 
 .emoji .icon {
     order: 1;
     flex-basis: 20%;    
+    margin-top: 3px;
 }
 
 .emoji p {
-    font-size: 15px;
+    font-size: 16px;
     order: 3;
+    margin-top: 14px;
 }
   
 .emoji a {
@@ -67,7 +70,8 @@ h2 {
     border-radius: 8px;
     order: 4;
     height: 20px;
-    width: 400px;  
+    width: 400px; 
+    margin-top: auto; 
 }
   
 .icon {
@@ -75,5 +79,4 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;  
 }
